@@ -80,7 +80,8 @@ function fig = SixDOFanimation(varargin)
         if(isempty(fileName))
             sprintf('AVI file not created as file already exists.')
         else
-            aviobj = avifile(fileName, 'fps', AVIfps, 'compression', 'Cinepak', 'quality', 100);
+            %aviobj = avifile(fileName, 'fps', AVIfps, 'compression', 'Cinepak', 'quality', 100);
+            aviobj = avifile(fileName, 'fps', AVIfps, 'compression', 'None', 'quality', 100); % CRS
         end
     end
 
